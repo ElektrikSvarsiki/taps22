@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: taps22
+
+  datasource:
+    url: jdbc:postgresql://localhost:5432/payments_db
+    username: payments_user
+    password: payments_pass
+    driver-class-name: org.postgresql.Driver
+
+  sql:
+    init:
+      mode: never
+
+  main:
+    banner-mode: off
+
+logging:
+  level:
+    org.springframework.jdbc.core: DEBUG
+
